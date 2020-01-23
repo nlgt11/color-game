@@ -20,7 +20,7 @@ for (var i = 0; i < squares.length; i++) {
                 squares[j].style.backgroundColor = pickedColor;
             }
             h1.style.backgroundColor = pickedColor;
-            btnReset.textContent = "Play Again";
+            btnReset.textContent = "Play Again?";
         } 
         else {
             message.textContent = "Try Again!";
@@ -55,8 +55,10 @@ function initialize(gameMode) {
     colorizeSquares(numOfSquare, colors);
     pickedColor = colors[Math.floor(Math.random()*colors.length)];
     colorSpan.textContent = pickedColor;
-    btnReset.textContent = "New color"
+    btnReset.textContent = "New color";
+    message.textContent = "";
 }
+
 
 function generateAColor () {
     var r = Math.floor(Math.random()*256);
