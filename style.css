@@ -1,6 +1,8 @@
 * {
     padding: 0;
     margin: 0;
+
+    font-family: 'Courier New', Courier;
 }
 body {
     background-color: #232323;
@@ -21,14 +23,74 @@ body {
     margin: 1.66%;
     background-color: purple;
     padding-bottom: 30%;
+    border-radius: 15%;
+    transition: background .5s;
+    -moz-transition: background .5s;
+    -webkit-transition: background .5s;
 }
+
+
+
+.selected {
+    color: white;
+    background-color: steelblue;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    background-color: steelblue;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding: 20px 0;
+    font-size: 32px;
+}
+h1 span {
+    font-size: 2em;
+    font-weight: 600;
+}
+
 
 .stripe {
     background-color: white;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.stripe .box {
+    text-align: center;
+    width: 20%;
 }
 
-.selected {
-    background-color: blue;
+#message {
+    align-self: center;
+    text-align: center;
+}
+button {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: steelblue;
+    letter-spacing: 1px;
+    font-size: larger;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    outline: none;
+}
+
+button:hover {
+    color: white;
+    background-color: steelblue;
+}
+
+@media only screen and (max-width: 780px) {
+    h1 {
+        font-size: 20px;
+    }
+    .stripe .box {
+        width: 33%;
+    }
 }

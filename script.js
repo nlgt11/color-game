@@ -50,7 +50,7 @@ function initialize(gameMode) {
     if (gameMode === "easy") {
         numOfSquare = 3;
     }
-    h1.style.backgroundColor = "#232323";
+    h1.style.backgroundColor = "steelblue";
     var colors = generateColor(numOfSquare);
     colorizeSquares(numOfSquare, colors);
     pickedColor = colors[Math.floor(Math.random()*colors.length)];
@@ -87,36 +87,3 @@ function colorizeSquares(numOfSquare, arrColor) {
         }
     }
 }; 
-
-// var colors = generateColor(6);
-// var pickedColor = pickColor();
-// colorSpan.textContent = pickedColor;
-// colorizeSquares(squares, colors);
-// var isHard = true;
-
-
-
-// //Reset btn function
-// btnReset.addEventListener("click", initialize);
-
-// btnEasy.addEventListener("click", function() {
-//     this.classList.add("selected");
-//     btnHard.classList.remove("selected");
-// });
-
-// btnHard.addEventListener("click", function() {
-//     this.classList.add("selected");
-//     btnEasy.classList.remove("selected");
-//     initialize();
-// });
-
-// function initialize(gameMode){
-//     colors = generateColor(6);
-//     pickedColor = pickColor();
-//     colorSpan.textContent = pickedColor;
-//     colorizeSquares(squares, colors);
-//     h1.style.backgroundColor = "#232323";
-// };
-
-
-
