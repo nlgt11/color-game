@@ -26,6 +26,9 @@ body {
 .stripe {
     background-color: white;
     display: flex;
-    justify-content: space-between;
-    color: black;
+    justify-content: space-evenly;
+}
+
+.selected {
+    background-color: blue;
 }
